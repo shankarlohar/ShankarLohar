@@ -25,7 +25,7 @@ jobs:
 
       # configuring API Token
       - name: Configure PyPI API
-        run: poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+        run: poetry config pypi-token.pypi ${{ secrets.PYPI_API_KEY }}
 
       # Build the package
       - name: Build package
