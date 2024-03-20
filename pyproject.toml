@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "shankarlohar"
-version = "0.1.0"
+version = "0.1.0-learning"
 description = ""
 authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
 readme = "README.md"
