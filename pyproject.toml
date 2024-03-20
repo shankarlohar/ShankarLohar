@@ -2,7 +2,7 @@
 name = "shankarlohar"
 version = "0.1.0"
 description = ""
-authors = ["shankarlohar <shankarloharmail@gmail.com>"]
+authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
