@@ -1,0 +1,32 @@
+name: Build and Publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10' 
+
+      # Install dependencies
+      - name: Install dependencies
+        run: poetry install
+
+      # configuring API Token
+      - name: Configure PyPI API
+        run: poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+
+      # Build the package
+      - name: Build package
+        run: poetry build
+
+      # Upload the built package
+      - name: Publish to PyPI
+        run: poetry publish
