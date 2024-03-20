@@ -1,1 +1,1 @@
-print("Hellow! World.")
+Word = "Shankar Lohar"
