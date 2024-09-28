@@ -3,4 +3,3 @@
 Don't be here yet. I am still learning...
 
 
-[Schedule a meeting](https://app.cal.com/shankarlohar)
